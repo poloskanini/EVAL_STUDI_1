@@ -1,0 +1,154 @@
+/* Import Fonts used */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Basic reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Customs Properties */
+:root {
+  --darkcolor: #2d2cdc;
+}
+
+/* Global Style */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#hero::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+}
+
+#hero video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+}
+
+/* #hero .texture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background: url(texture2.png);
+  opacity: .5;
+} */
+
+#hero .caption {
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+#hero .caption h1 {
+  text-transform: uppercase;
+  font-size: 3.5em;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .3rem;
+  text-shadow: black 2px 3px;
+}
+
+#hero .caption p {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .2rem;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+/* NAVBAR */
+.navbar {
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 1rem 3rem;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  opacity: .5;
+}
+
+.nav-item {
+  text-shadow: black 2px 2px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10rem;
+  z-index: 50;
+}
+
+.arrow img {
+  height: 50px;
+}
+
+.top-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(clearing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.card-left {
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  left: 0;
+  top: 200px;
+}
+
+.card-left-article {
+  color: rgb(0, 0, 0);
+}
+
+.transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Media queries */
