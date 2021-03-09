@@ -1,7 +1,10 @@
-/* Import Fonts used */
+/*** IMPORT USED FONTS ***/
+/* Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* Euclid */
+@import url('/Euclid/stylesheet.css');
 
-/* Basic reset */
+/*** Basic reset ***/
 *,
 *::before,
 *::after {
@@ -10,12 +13,12 @@
   box-sizing: border-box;
 }
 
-/* Customs Properties */
+/*** Customs Properties ***/
 :root {
-  --darkcolor: #2d2cdc;
+  --darkBackground: #272522;
 }
 
-/* Global Style */
+/*** Global Style ***/
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -23,9 +26,10 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-family: 'EuclidCircularB', sans-serif;
 }
 
-/* HERO */
+/*** HERO ***/
 #hero {
   height: 105vh;
   width: 100%;
@@ -55,7 +59,7 @@ body {
   object-fit: cover;
 }
 
-/* NAVBAR */
+/*** NAVBAR ***/
 .navbar {
   z-index: 50;
   top: 0;
@@ -103,7 +107,7 @@ body {
   opacity: .2;
 }
 
-/* CAPTION */
+/*** TITRE ***/
 .caption {
   position: relative;
   z-index: 20;
@@ -126,23 +130,22 @@ body {
   font-size: 1rem;
 }
 
-/* Arrow */
+/*** FLECHE */
 /* .arrow {
   position: absolute;
   bottom: 4rem;
   z-index: 50;
-} */
+}
 
 .arrow img {
   height: 1.5rem;
-}
+} */
 
-.top-container {
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 20;
+/* Presentation */
+
+.presentation-container h2 {
+  font-family: 'Euclid Circular B', 'sans serif';
+  font-size: 3.6rem;
 }
 
 
