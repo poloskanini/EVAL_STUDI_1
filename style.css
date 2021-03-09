@@ -27,12 +27,11 @@ body {
 
 /* HERO */
 #hero {
+  height: 105vh;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
+  flex-direction: column;
 }
 
 #hero::after {
@@ -43,7 +42,7 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .1);
 }
 
 #hero video {
@@ -63,7 +62,8 @@ body {
   left: 0;
   right: 0;
   font-size: 1.5vh;
-  margin-top: 1rem;
+  background-color: #000;
+  /* background: linear-gradient(to bottom, 0% #000, transparent 100%); */
 }
 
 .navbar-toggler {
@@ -76,19 +76,39 @@ body {
 
 .blason {
   margin-left: 2rem;
-  width: 2rem;
+  width: 2.5rem;
 }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-link:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	bottom: -5px;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out;
+  opacity: .7;
+}
+ 
+.nav-link:hover:before {
+	visibility: visible;
+	width: 100%;
+  opacity: .2;
 }
 
 /* CAPTION */
 .caption {
   position: relative;
   z-index: 20;
-  text-align: center;
   color: #FFF;
+  text-align: center;
 }
 
 .caption-title {
@@ -107,46 +127,33 @@ body {
 }
 
 /* Arrow */
-.arrow {
+/* .arrow {
   position: absolute;
-  bottom: 1rem;
+  bottom: 4rem;
   z-index: 50;
-}
+} */
 
 .arrow img {
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .top-container {
   position: relative;
   height: 100vh;
-  width: 100vw;
-  background-image: url(clearing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 20;
 }
 
-.card-left {
-  position: absolute;
-  width: 50%;
-  height: 70%;
-  left: 0;
-  top: 200px;
-}
 
-.card-left-article {
-  color: rgb(0, 0, 0);
-}
+/**************** Media queries ************/
+/* GRAND ÉCRAN */
+@media screen and (min-width: 1024px) {
+  .caption-title {
+    font-size: 4rem;
+  }
 
-.transparent {
-  background-color: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  .caption-text {
+    font-size: 1.5rem;
+  }
 }
-
-/* Media queries */
