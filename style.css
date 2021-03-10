@@ -2,7 +2,7 @@
 /* Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 /* Euclid */
-@import url('/Euclid/stylesheet.css');
+@import url('Euclid/stylesheet.css');
 
 /*** Basic reset ***/
 *,
@@ -141,6 +141,7 @@ body {
 }
 
 .arrow-img {
+  color: #000;
   width: 5rem;
   height: 1.5rem;
   animation: 2s ease-out 0s infinite running arrowFly;
