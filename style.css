@@ -124,7 +124,7 @@ body {
   padding: 2rem;
 }
 
-.caption-text {
+.caption-subtitle {
   font-family: 'Oswald', sans-serif;
   letter-spacing: .2rem;
   font-size: 1rem;
@@ -136,18 +136,18 @@ body {
   bottom: 0;
   z-index: 50;
   width: 100%;
-  height: 100px;
+  height: 70px;
   overflow: hidden;
 }
 
 .arrow-img {
   width: 2rem;
   height: 1.5rem;
-  animation: 3s ease-out 0s infinite running arrowFly;
+  animation: 2s ease-out 0s infinite running arrowFly;
   z-index: 10;
   position: absolute;
   overflow: hidden;
-  opacity: .4;
+  opacity: 1;
 }
   
 /* ARROW ANIMATION */
@@ -161,8 +161,8 @@ body {
   }
   
 /*** OLD SECTION ***/
-
-.texture {
+/* 
+.old-texture {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -170,7 +170,7 @@ body {
   left: 0;
   background-image: url(images/97517869_l.jpg);
   opacity: 0.1;
-}
+} */
 
 
 #old-section,
@@ -183,7 +183,7 @@ body {
   /* height: 100vh; */
 }
 
-.old-devise h2 {
+.old-title h2 {
   padding: 0 2rem 0;
 }
 
@@ -232,12 +232,12 @@ body {
     font-size: 4.8rem;
   }
 
-  .caption-text {
+  .caption-subtitle {
     font-size: 1.5rem;
   }
 
   .arrow-img {
-    width: 3rem;
+    width: 2.5rem;
   }
 
   .old-second-row {
@@ -252,8 +252,8 @@ body {
     line-height: 2.2;
   }
 
-  .old-devise h2,
-  .nature-devise h2 {
+  .old-title h2,
+  .nature-title h2 {
     font-size: 2.6vw;
   }
 }
