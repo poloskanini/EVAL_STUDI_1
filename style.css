@@ -130,23 +130,37 @@ body {
   font-size: 1rem;
 }
 
-/*** FLECHE */
-/* .arrow {
+/*** ARROW ***/
+.arrow {
   position: absolute;
-  bottom: 4rem;
+  bottom: 0;
   z-index: 50;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
 }
 
-.arrow img {
+.arrow-img {
+  width: 2rem;
   height: 1.5rem;
-} */
-
+  animation: 3s ease-out 0s infinite running arrowFly;
+  z-index: 10;
+  position: absolute;
+  overflow: hidden;
+  opacity: .4;
+}
+  
+/* ARROW ANIMATION */
+  @keyframes arrowFly {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(100px);
+    }
+  }
+  
 /*** OLD SECTION ***/
-/* .gradient {
-  background: linear-gradient(to bottom, #000,#FFF);
-  background-color: #000;
-  height: 130vh;
-} */
 
 .texture {
   width: 100%;
@@ -155,7 +169,7 @@ body {
   top: 0;
   left: 0;
   background-image: url(images/97517869_l.jpg);
-  opacity: .1;
+  opacity: 0.1;
 }
 
 
@@ -173,15 +187,6 @@ body {
   padding: 0 2rem 0;
 }
 
-/* .old-text {
-  padding: 0 2rem;
-}
-
-.old-text p {
-  padding: 1rem;
-  font-size: 1rem;
-} */
-
 .old-img {
   width: 80%;
   height: auto;
@@ -197,7 +202,8 @@ body {
 /*** NATURE SECTION ***/
 #nature-section {
   position: relative;
-  padding-top: 5rem;
+  padding-top: 1rem;
+  color: #81af78;
 }
 
 .nature-img {
@@ -205,6 +211,19 @@ body {
   height: auto;
   object-fit: contain;
 }
+
+/*** WHO ARE WE SECTION ***/
+#whoarewe-section {
+  background-color: #000;
+  padding-top: 3rem;
+  height: 150vh;
+}
+
+.whoarewe-container {
+  background-color: #81af78;
+  height: 80vh;
+}
+
 
 /**************** Media queries ************/
 /* GRAND ÉCRAN */
@@ -215,6 +234,10 @@ body {
 
   .caption-text {
     font-size: 1.5rem;
+  }
+
+  .arrow-img {
+    width: 3rem;
   }
 
   .old-second-row {
