@@ -117,7 +117,7 @@ body {
 
 .caption-title {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: 'Oswald', sans-serif;
   letter-spacing: .3rem;
   text-shadow: black 1px 2px;
@@ -141,56 +141,116 @@ body {
   height: 1.5rem;
 } */
 
-/*** PRESENTATION SECTION ***/
-
-#main-content {
-  background: linear-gradient(to bottom, #000 30%,#FFF);
-  height: 400vh;
+/*** OLD SECTION ***/
+.gradient {
+  background: linear-gradient(to bottom, #000,#FFF);
+  height: 130vh;
 }
 
-#presentation-section {
-  height: 100vh;
-  font-size: 1.2rem;
+.texture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background-image: url(images/97517869_l.jpg);
+  opacity: .1;
+  object-fit: contain;
 }
 
-.presentation-container {
+#old-section {
+  /* height: 100vh; */
+  font-size: 1.1rem;
+  position: relative;
+  /* background: linear-gradient(to bottom, #000,#FFF); */
+  /* height: 300vh; */
+}
+
+.old-container {
   color: #FFF;
   font-family: 'Euclid Circular B', 'sans serif';
-  height: 100vh;
+  /* height: 100vh; */
 }
 
-.presentation-first {
-  padding: 3rem;
+.old-devise h2 {
+  padding: 0 2rem 0;
 }
 
-.presentation-text {
+.old-text {
   font-family: 'Raleway';
-  font-weight: 100;
-  margin: 2rem;
-  padding: 0 3rem 0;
+  padding: 0 2rem;
 }
 
-.presentation-image {
-  margin: 2rem;
-}
-.presentation-image img {
-  max-height: 50vh;
-  object-fit: cover;
+.old-text p {
+  padding: 1rem;
+  font-size: 1rem;
 }
 
-.presentation-second {
-  margin-top: 2rem;
+.old-img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
 }
 
+.old-second,
+.nature-second {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+}
+
+/*** NATURE SECTION ***/
+#nature-section {
+  position: relative;
+  padding-top: 5rem;
+}
+
+.nature-container {
+  color: rgb(22, 61, 24);
+  font-family: 'Euclid Circular B', 'sans serif';
+}
+
+.nature-img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
 
 /**************** Media queries ************/
 /* GRAND ÉCRAN */
 @media screen and (min-width: 1024px) {
   .caption-title {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .caption-text {
     font-size: 1.5rem;
+  }
+
+  .old-second {
+    margin-top: 8rem;
+  }
+
+  .old-second-text {
+    padding: 0 2rem;
+  }
+
+  .old-text p {
+    font-size: 1.5rem;
+  }
+
+  .old-devise h2,
+  .nature-devise h2 {
+    font-size: 2.6vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .old-second {
+    margin-top: 2rem;
+  }
+  
+  .old-text p {
+    font-size: 1.2rem;
   }
 }
