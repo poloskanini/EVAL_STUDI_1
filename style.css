@@ -182,8 +182,9 @@ body {
   /* height: 100vh; */
 }
 
-.old-title {
+.old-first {
   padding-top: 4rem;
+  background-color: #000;
 }
 .old-title h2 {
   padding: 0 2rem 0;
