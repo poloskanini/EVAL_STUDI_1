@@ -71,6 +71,9 @@ body {
   /* background: linear-gradient(to bottom, 0% #000, transparent 100%); */
 }
 
+.navbar-expand-lg {
+}
+
 .navbar-toggler {
   margin-right: 2rem;
 }
@@ -135,17 +138,16 @@ body {
 .arrow {
   position: absolute;
   bottom: 0;
-  z-index: 50;
+  z-index: 10;
   width: 100%;
-  height: 70px;
+  height: 80px;
   overflow: hidden;
 }
 
 .arrow-img {
-  color: #000;
-  width: 5rem;
+  width: 2rem;
   height: 1.5rem;
-  animation: 2s ease-out 0s infinite running arrowFly;
+  animation: 1.5s ease-out 0s infinite running arrowFly;
   z-index: 10;
   position: absolute;
   overflow: hidden;
@@ -161,7 +163,7 @@ body {
       transform: translateY(100px);
     }
   }
-  
+
 /*** OLD SECTION ***/
 /* 
 .old-texture {
@@ -193,7 +195,8 @@ body {
 }
 
 .section-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: ;
 }
 
 .old-img {
@@ -211,7 +214,7 @@ body {
 /*** NATURE SECTION ***/
 #nature-section {
   position: relative;
-  padding-top: 1rem;
+  padding: 3rem 0;
   color: #81af78;
 }
 
@@ -223,15 +226,20 @@ body {
 
 /*** WHO ARE WE SECTION ***/
 #whoarewe-section {
-  background-color: #000;
-  padding-top: 3rem;
-  height: 150vh;
+  background-color: #FFF;
+  height: 200vh;
 }
 
 .whoarewe-container {
-  background-color: #81af78;
+  background-color: #FFF;
+  background-image: url(images/clairiere.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 80vh;
 }
+
 
 
 /**************** Media queries ************/
@@ -258,12 +266,13 @@ body {
   }
 
   .section-text p {
+    font-size: 1.3rem;
     line-height: 2.2;
   }
 
   .old-title h2,
   .nature-title h2 {
-    font-size: 2.6vw;
+    font-size: 2.3vw;
   }
 }
 
