@@ -51,7 +51,7 @@ body {
 } */
 
 #hero video {
-  /* width: 100%; */
+  width: 100%;
   min-height: 100%;
   position: absolute;
   top: 0;
@@ -185,6 +185,7 @@ body {
 
 .old-first {
   background-color: #000;
+  padding-top: 7rem;
 }
 .old-title h2 {
   padding: 0 2rem 0;
