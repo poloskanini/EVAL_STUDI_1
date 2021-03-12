@@ -223,14 +223,14 @@ body {
 /*** WHO ARE WE SECTION ***/
 #whoarewe-section {
   background-color: #FFF;
-  height: 120vh;
+  /* height: 120vh; */
 }
 
 .whoarewe-title {
   background-color: #FFF;
   background-image: url(images/clairiere.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
   height: 60vh;
@@ -249,7 +249,7 @@ body {
 /* TEAM-WRAPPER */
 .team-wrapper {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* Adherents */
@@ -260,7 +260,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 70vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -268,8 +268,14 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   position: absolute;
-  mix-blend-mode: color-dodge;
-  color: white;
+  /* mix-blend-mode: color-dodge; */
+  color: rgb(255, 255, 255);
+  text-shadow: black 2px 1px;
+}
+
+.event {
+  background-color: darkred;
+  height: 30vh;
 }
 
 /**************** Media queries ************/
