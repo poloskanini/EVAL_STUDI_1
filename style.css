@@ -252,6 +252,26 @@ body {
   height: 100vh;
 }
 
+/* Adherents */
+.adherents {
+  background-color: #FFF;
+  background-image: url(images/adherents.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  position: relative;
+}
+
+.adherents h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  color: white;
+}
+
 /**************** Media queries ************/
 /* GRAND ÉCRAN */
 @media screen and (min-width: 1024px) {
