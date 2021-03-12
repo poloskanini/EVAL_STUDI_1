@@ -230,7 +230,7 @@ body {
   background-color: #FFF;
   background-image: url(images/clairiere.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
   height: 60vh;
@@ -254,21 +254,24 @@ body {
 
 /* Adherents */
 .adherents {
-  background-color: #FFF;
+  position: relative;
   background-image: url(images/adherents.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
-  position: relative;
+  height: 60vh;
 }
 
-.adherents h3 {
+.adherents-img {
+  position: relative;
+  width: 100%;
+}
+
+.adherent-title {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   position: absolute;
-  /* mix-blend-mode: color-dodge; */
+  mix-blend-mode: color-dodge;
   color: rgb(255, 255, 255);
   text-shadow: black 2px 1px;
 }
