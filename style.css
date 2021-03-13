@@ -254,12 +254,12 @@ body {
 
 /* Adherents */
 .adherents {
+  height: 60vh;
   position: relative;
   background-image: url(images/adherents.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 60vh;
 }
 
 .adherents-img {
@@ -271,15 +271,78 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   position: absolute;
+  right: 1rem;
   mix-blend-mode: color-dodge;
   color: rgb(255, 255, 255);
   text-shadow: black 2px 1px;
 }
 
-.event {
-  background-color: darkred;
-  height: 30vh;
+/*** EVENTS ***/
+
+.event-wrapper {
+  width: 50%;
+  position: relative;
+  background-color: #000;
+  display: flex;
+  align-items: flex-end;
 }
+
+.event-wrapper::after {
+  background-color: #000;
+}
+
+.event-wrapper video {
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+/*** FOOTER ***/
+
+footer {
+  height: 10vh;
+  background-color: #000;
+  color: #FFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* .event {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #000;
+}
+
+.event video {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+}
+
+.event-heading {
+  height: 100%;
+  position: relative;
+  z-index: 20;
+  color: #FFF;
+  text-align: center;
+}
+
+.event-title {
+  position: absolute;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+} */
 
 /**************** Media queries ************/
 /* GRAND ÉCRAN */
