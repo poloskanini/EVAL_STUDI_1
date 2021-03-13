@@ -31,7 +31,7 @@ body {
 
 /*** HERO ***/
 #hero {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ body {
 
 #hero video {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -67,19 +67,26 @@ body {
   left: 0;
   right: 0;
   background-color: #000;
-  /* background: linear-gradient(to bottom, 0% #000, transparent 100%); */
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: black 1px 2px;
 }
 
 .navbar-toggler {
   margin-right: 2rem;
+  font-size: .9rem;
 }
 
 .navbar-collapse {
-  margin: 2rem;
+  margin: 0 2rem;
 }
 
 .blason {
-  margin-left: 2rem;
+  margin: 2rem;
   width: 2.5rem;
 }
 
@@ -113,6 +120,7 @@ body {
   z-index: 20;
   color: #FFF;
   text-align: center;
+  padding-top: 3rem;
 }
 
 .caption-title {
@@ -225,23 +233,22 @@ body {
   background-color: #FFF;
   background-image: url(images/clairiere.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  /* height: 60vh; */
+  /* background-attachment: fixed; */
+  height: 60vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
 }
 
 .whoarewe-title h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
-  mix-blend-mode: color-dodge;
-  color: darkgrey;
-  text-shadow: 1px 2px black;
+  /* mix-blend-mode: color-dodge; */
+  color: #FFF;
+  text-shadow: 0 1px black;
   margin: 2rem;
 }
 
@@ -253,12 +260,13 @@ body {
 
 /* Adherents */
 .adherents {
-  /* height: 90vh; */
+  height: 90vh;
   position: relative;
   background-image: url(images/adherents.jpg);
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -285,17 +293,19 @@ body {
   box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 4px 7px 0px rgba(255, 255, 255, 0.75);
-}
-
-.event-btn:hover {
-  opacity: .9;
+  background-color: rgb(34, 31, 31);
+  color: #FFF;
 }
 
 .event-title {
   position: relative;
-  z-index: 100;
   color: #FFF;
   font-family: 'EuclidCircularB';
+}
+
+.event-btn:hover {
+  background-color: #FFF;
+  color: #000;
 }
 
 
@@ -303,7 +313,7 @@ body {
 /*** FOOTER ***/
 
 footer {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -345,10 +355,48 @@ footer {
     font-size: 2.3vw;
   }
 
+  .whoarewe-title {
+    background-color: #FFF;
+    background-image: url(images/clearing-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whoarewe-title h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    mix-blend-mode: color-dodge;
+    color: darkgrey;
+    text-shadow: 1px 2px black;
+    margin: 2rem;
+  }
+
+  .adherents {
+    height: 90vh;
+    position: relative;
+    background-image: url(images/adherents-hd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
   .whoarewe-title h3,
   .adherent-title h3 {
     font-size: 4.5rem;
   }
+
+
 }
 /* 
 @media screen and (min-width: 768px) {
