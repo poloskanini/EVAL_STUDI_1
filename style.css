@@ -66,7 +66,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  font-size: 1.5vh;
   background-color: #000;
   /* background: linear-gradient(to bottom, 0% #000, transparent 100%); */
 }
@@ -221,10 +220,6 @@ body {
 }
 
 /*** WHO ARE WE SECTION ***/
-#whoarewe-section {
-  background-color: #FFF;
-  /* height: 120vh; */
-}
 
 .whoarewe-title {
   background-color: #FFF;
@@ -235,15 +230,19 @@ body {
   background-attachment: fixed;
   height: 60vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
 }
 
 .whoarewe-title h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
-  position: absolute;
-  /* bottom: 0; */
   mix-blend-mode: color-dodge;
   color: darkgrey;
+  text-shadow: 1px 2px black;
+  margin: 2rem;
 }
 
 /* TEAM-WRAPPER */
@@ -254,12 +253,16 @@ body {
 
 /* Adherents */
 .adherents {
-  height: 60vh;
+  height: 90vh;
   position: relative;
   background-image: url(images/adherents.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .adherents-img {
@@ -267,82 +270,47 @@ body {
   width: 100%;
 }
 
-.adherent-title {
+.adherent-title h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
-  position: absolute;
-  right: 1rem;
-  mix-blend-mode: color-dodge;
-  color: rgb(255, 255, 255);
-  text-shadow: black 2px 1px;
+  color: #FFF;
+  text-shadow: 1px 2px black;
 }
 
-/*** EVENTS ***/
-
-.event-wrapper {
-  width: 50%;
+.event-btn {
+  margin-top: 10rem;
+  border: 0;
   position: relative;
-  background-color: #000;
-  display: flex;
-  align-items: flex-end;
+  padding: 2rem;
+  box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 4px 7px 0px rgba(255, 255, 255, 0.75);
 }
 
-.event-wrapper::after {
-  background-color: #000;
+.event-btn:hover {
+  opacity: .9;
 }
 
-.event-wrapper video {
-  height: 20vh;
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
+.event-title {
+  position: relative;
+  z-index: 100;
+  color: #FFF;
+  font-family: 'EuclidCircularB';
 }
+
+
 
 /*** FOOTER ***/
 
 footer {
   height: 10vh;
-  background-color: #000;
-  color: #FFF;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-/* .event {
-  height: 30vh;
-  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: flex-end;
   position: relative;
   background-color: #000;
 }
 
-.event video {
-  width: 100%;
-  height: 30vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  object-fit: cover;
-}
-
-.event-heading {
-  height: 100%;
-  position: relative;
-  z-index: 20;
-  color: #FFF;
-  text-align: center;
-}
-
-.event-title {
-  position: absolute;
-  color: #FFF;
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.8rem;
-} */
 
 /**************** Media queries ************/
 /* GRAND ÉCRAN */
@@ -377,8 +345,9 @@ footer {
     font-size: 2.3vw;
   }
 
-  .whoarewe-title h3 {
-    font-size: 5rem;
+  .whoarewe-title h3,
+  .adherent-title h3 {
+    font-size: 4.5rem;
   }
 }
 /* 
