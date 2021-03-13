@@ -230,8 +230,8 @@ body {
   background-color: #FFF;
   background-image: url(images/clairiere.jpg);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
   height: 60vh;
   position: relative;
@@ -256,8 +256,8 @@ body {
 .adherents {
   position: relative;
   background-image: url(images/adherents.jpg);
-  background-position: center;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
   height: 60vh;
 }
