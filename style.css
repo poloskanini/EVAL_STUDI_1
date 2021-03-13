@@ -263,13 +263,13 @@ body {
   height: 90vh;
   position: relative;
   background-image: url(images/adherents.jpg);
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
