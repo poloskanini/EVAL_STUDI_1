@@ -193,22 +193,16 @@ body {
 
 .old-first {
   background-color: #000;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .old-first h2 {
   padding: 0 2rem 0;
 }
 
-.old-image {
-  position: relative;
-  overflow: hidden;
-}
-
 .old-img {
-  width: 80%;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 .old-second-row,
@@ -220,18 +214,23 @@ body {
 .section-text {
   font-size: 1rem;
   color: rgba(255,255,255,.55);
+  padding: 1rem;
 }
 
 /*** NATURE SECTION ***/
 #nature-section {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   color: #81af78;
 }
 
 .nature-img {
-  width: 80%;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
+}
+
+.green-text {
+  font-size: 1rem;
+  color: #54724e;
 }
 
 /*** WHO ARE WE SECTION ***/
@@ -342,6 +341,14 @@ footer {
 
   .arrow-img {
     width: 2.5rem;
+  }
+
+  .old-first {
+    padding-top: 5rem;
+  }
+
+  #nature-section {
+    padding-bottom: 5rem;
   }
 
   .old-second-row {
