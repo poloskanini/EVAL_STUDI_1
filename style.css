@@ -106,7 +106,7 @@ body {
 	content: "";
 	position: absolute;
 	width: 0;
-	height: 3px;
+	height: 2px;
 	bottom: -5px;
 	left: 0;
 	background-color: #fff;
@@ -298,27 +298,13 @@ body {
 .event-btn {
   margin: 2rem;
   border: 0;
-  position: relative;
-  padding: 1rem;
-  box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 4px 7px 0px rgba(255, 255, 255, 0.75);
-  background-color: rgb(34, 31, 31);
-  color: #FFF;
-}
-
-.event-title {
-  position: relative;
-  color: #FFF;
-  font-family: 'EuclidCircularB';
-}
+  transition: all 0.4s ease-in-out;}
 
 .event-btn:hover {
   background-color: #FFF;
   color: #000;
+  opacity: .7;
 }
-
-
 
 /*** FOOTER ***/
 
@@ -381,7 +367,7 @@ footer {
 
   .whoarewe-title {
     background-color: #FFF;
-    background-image: url(images/clearing-md.jpg);
+    background-image: url(images/clairiere_PS.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -405,7 +391,7 @@ footer {
   .adherents {
     height: 90vh;
     position: relative;
-    background-image: url(images/adherents-hd.jpg);
+    background-image: url(images/adherents_PS2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
