@@ -29,9 +29,13 @@ body {
   font-family: 'EuclidCircularB', sans-serif;
 }
 
+.header {
+  min-height: 10vh;
+}
+
 /*** HERO ***/
 #hero {
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,7 +56,7 @@ body {
 
 #hero video {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -141,6 +145,7 @@ body {
 .caption-subtitle {
   font-family: 'Oswald', sans-serif;
   letter-spacing: .2rem;
+  text-shadow: black 1px 2px;
   font-size: 1rem;
 }
 
@@ -200,8 +205,9 @@ body {
   padding-top: 2rem;
 }
 
-.old-first h2 {
-  padding: 0 2rem 0;
+.old-first h2,
+.nature-first h2 {
+  padding: 0 4rem 0;
 }
 
 .old-img {
@@ -218,7 +224,6 @@ body {
 .section-text {
   font-size: 1rem;
   color: rgba(255,255,255,.55);
-  padding: 1rem;
 }
 
 /*** NATURE SECTION ***/
@@ -349,18 +354,62 @@ footer {
   background-color: #000;
 }
 
+footer h5 {
+  color: #FFF;
+}
+
 /***!! EVENEMENTS PAGE !!***/
 
 /* Forrest Section */
 .forrest-section {
-  height: 150vh;
+  min-height: 100vh;
+  width: 100%;
   background-image: url(images/forrest_HD.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
+  /* position: relative; */
 }
 
+.event-heading {
+  color: #000;
+}
+
+.event-heading-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(14, 13, 13);
+  margin: 1rem 1rem 0;
+  padding: 1rem;
+}
+
+.cards-wrapper {
+  padding: 0 2rem;
+}
+
+.card {
+  max-width: 600px;
+  margin-bottom: 2rem;
+  transition: all ease 0.5s;
+}
+
+.card:hover {
+  filter: grayscale(80%);
+  cursor: pointer;
+}
+
+.date-square {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(197, 44, 102);
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 800;
+}
 
 /* Modal */
 
@@ -453,7 +502,7 @@ footer {
 
   .event-button {
     background: #000;
-    width: 70%;
+    width: 54%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -496,6 +545,19 @@ footer {
     font-family: 'Oswald', sans-serif;
     letter-spacing: .3rem;
     text-shadow: black 1px 2px;
+  }
+
+  .event-heading-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(14, 13, 13);
+    margin: 1rem 0 0;
+  }
+
+  .card {
+    max-width: 800px;
+    margin-bottom: 2rem;
   }
   
 }
