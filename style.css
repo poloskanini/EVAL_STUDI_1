@@ -269,7 +269,7 @@ body {
 }
 
 /* Adherents */
-.adherents {
+#adherents {
   height: 90vh;
   position: relative;
   background-image: url(images/adherents_PS2.jpg);
@@ -283,7 +283,7 @@ body {
   align-items: flex-end;
 }
 
-.adherents-img {
+#adherents-img {
   position: relative;
   width: 100%;
 }
@@ -349,6 +349,19 @@ footer {
   background-color: #000;
 }
 
+/***!! EVENEMENTS PAGE !!***/
+
+/* Forrest Section */
+.forrest-section {
+  height: 150vh;
+  background-image: url(images/forrest_HD.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
 /* Modal */
 
 .modal-dialog {
@@ -372,7 +385,7 @@ footer {
   }
 
   .old-first {
-    padding-top: 5rem;
+    padding-top: 6rem;
   }
 
   #nature-section {
@@ -420,7 +433,7 @@ footer {
     margin: 2rem;
   }
 
-  .adherents {
+  #adherents {
     height: 90vh;
     position: relative;
     background-image: url(images/adherents_PS2.jpg);
@@ -447,6 +460,42 @@ footer {
     margin: 1rem;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
+  }
+
+  #event-banner {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #000;
+    background-attachment: fixed;
+  }
+  
+  #event-banner video {
+    height: 15rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+  }
+  
+  .event-caption {
+    position: relative;
+    z-index: 20;
+    color: #FFF;
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .event-caption-title {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .3rem;
+    text-shadow: black 1px 2px;
   }
   
 }
