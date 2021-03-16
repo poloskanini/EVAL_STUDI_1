@@ -348,14 +348,16 @@ body {
 footer {
   height: 10vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
-  position: relative;
   background-color: #000;
+  padding: 2rem;
 }
 
 footer h5 {
   color: #FFF;
+  font-size: 1rem;
 }
 
 /***!! EVENEMENTS PAGE !!***/
