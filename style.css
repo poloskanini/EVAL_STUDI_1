@@ -349,15 +349,59 @@ body {
 footer {
   height: 10vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   background-color: #000;
   padding: 2rem;
+  position: relative;
 }
 
 footer h5 {
   color: #FFF;
   font-size: 1rem;
 }
+
+.top-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+}
+  
+.author-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  font-family: 'Euclid Circular B', sans-serif;
+  font-size: .8rem;
+  font-weight: 100;
+}
+
+.bi-arrow-up-circle {
+  width: 2rem;
+  color: white;
+}
+
+.bi-arrow-up-circle:hover {
+  animation: 1.5s ease-out 0s infinite running arrowFly;
+  transition: all ease 2s;
+}
+
+/* TOPBUTTON ANIMATION */
+@keyframes arrowFly {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 /***!! EVENEMENTS PAGE !!***/
 
@@ -569,6 +613,5 @@ footer h5 {
     max-width: 1000px;
     margin-bottom: 2rem;
   }
-  
 }
 
