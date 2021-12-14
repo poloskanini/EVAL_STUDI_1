@@ -466,6 +466,10 @@ footer {
   cursor: pointer;
 }
 
+.card2 {
+  align-self: flex-end;
+}
+
 .date-square {
   height: 100%;
   width: 100%;
@@ -489,6 +493,10 @@ footer {
 /* Modal */
 .modal-dialog {
   margin-top: 5rem;
+}
+
+.label-form {
+  padding: 1rem 0;
 }
 
 /************ Media queries ************/
